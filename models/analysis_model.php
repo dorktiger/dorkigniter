@@ -30,7 +30,7 @@ class Analysis_model extends CI_Model {
 	{
 		if($id == 0)
 		{
-			return $this->db->query("SELECT output FROM profiler_records ORDER BY id DESC LIMIT 1")->row();
+			return $this->db->query("SELECT id, output FROM profiler_records ORDER BY id DESC LIMIT 1")->row();
 		}
 		if($id > 0)
 		{
