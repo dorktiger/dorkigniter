@@ -34,13 +34,8 @@ class Analysis_model extends CI_Model {
 		}
 		if($id > 0)
 		{
-			$query = $this->db->query("SELECT output FROM profiler_records where id = " . $id);
-			$return = "";
-			foreach ($query->result() as $row)
-			{
-				$return = $row;
-			}
-			return $return;
+			$query = $this->db->query("SELECT id, output FROM profiler_records where id = " . $id);
+			return $query->row();
 		}
 	}
 }

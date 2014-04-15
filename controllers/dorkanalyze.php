@@ -35,6 +35,7 @@ class Dorkanalyze extends CI_Controller {
 	function profiler($id = 0)
 	{
 		$output = $this->analysis_model->get_last_profiler_record($id);
+		print_r($output->id);
 		print_r($output->output);
 	}
 }
