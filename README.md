@@ -1,4 +1,4 @@
-Dorkigniter Analysis
+Dorkigniter Analysis - FOR CI2
 ===========
 
 Codeigniter's Profiler is a very helpful tool for analyzing and debugging CI applications. Unfortunately, it doesn't play well with AJAX requests.
